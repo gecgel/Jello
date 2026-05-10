@@ -1,0 +1,12 @@
+{
+  "compilerTests": [
+    {
+      "args": ["run", "entrypoint"]
+    }
+  ],
+  "modules": [
+    {
+      "name": "entrypoint"
+    }
+  ]
+}
