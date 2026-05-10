@@ -1,0 +1,6 @@
+# cSpell: disable
+Checks: "*\
+  ,-altera-unroll-loops\
+  ,-cppcoreguidelines-init-variables\
+  ,-llvmlibc-restrict-system-libc-headers\
+  "

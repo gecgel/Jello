@@ -1,0 +1,127 @@
+##
+## Copyright (C) 2026 Cem GEÇGEL <gecgelcem@outlook.com>
+## License: MIT
+##
+## This is configuration for clang-format to format C and C++ files.  There is
+## no line limit; which means, wrapping is manually enabled or disabled for long
+## expressions.  When wrapped, places items one-per-line.
+##
+## Changelog:
+##  - 2026.04.25:
+##    - Removed `RemoveParentheses` because it breaks macros.
+##  - 2026.02.19:
+##    - Removed buggy `AlignArrayOfStructures`.
+##  - 2025.09.06:
+##    - Added `TestSuite` prefix to `IncludeIsMainRegex`.
+##  - 2025.03.18:
+##    - Created the configuration.
+##
+## Tested with:
+##  - clang-format version 20.1.0
+##  - clang-format version 21.1.0
+##
+
+BasedOnStyle: LLVM
+AccessModifierOffset: -4
+AlignAfterOpenBracket: BlockIndent
+AlignArrayOfStructures: None
+AlignConsecutiveAssignments:
+  Enabled: false
+AlignConsecutiveBitFields:
+  Enabled: false
+AlignConsecutiveDeclarations:
+  Enabled: false
+AlignConsecutiveMacros:
+  Enabled: false
+AlignConsecutiveShortCaseStatements:
+  Enabled: false
+AlignEscapedNewlines: Left
+AlignOperands: AlignAfterOperator
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 0
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: true
+AttributeMacros: []
+BinPackArguments: false
+BinPackParameters: OnePerLine
+BitFieldColonSpacing: Both
+BracedInitializerIndentWidth: 4
+BreakAdjacentStringLiterals: false
+BreakAfterAttributes: Leave
+BreakAfterReturnType: Automatic
+BreakBeforeBinaryOperators: All
+BreakBeforeBraces: Attach
+BreakBeforeInlineASMColon: OnlyMultiline
+BreakBeforeTernaryOperators: true
+BreakFunctionDefinitionParameters: false
+BreakStringLiterals: false
+BreakTemplateDeclarations: Leave
+ColumnLimit: 0
+ContinuationIndentWidth: 8
+DerivePointerAlignment: false
+DisableFormat: false
+FixNamespaceComments: false
+ForEachMacros: []
+IfMacros: []
+IncludeBlocks: Regroup
+IncludeIsMainRegex: "(TestSuite)?$"
+IndentCaseBlocks: false
+IndentCaseLabels: false
+IndentExternBlock: NoIndent
+IndentGotoLabels: true
+IndentPPDirectives: BeforeHash
+IndentWidth: 4
+IndentWrappedFunctionNames: false
+InsertBraces: true
+InsertNewlineAtEOF: true
+IntegerLiteralSeparator:
+  Binary: 4
+  BinaryMinDigits: 6
+  Decimal: 3
+  DecimalMinDigits: 5
+  Hex: 4
+  HexMinDigits: 6
+KeepEmptyLinesAtEOF: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+LineEnding: DeriveCRLF
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: All
+PPIndentWidth: -1
+PointerAlignment: Right
+QualifierAlignment: Right
+RawStringFormats: []
+ReflowComments: true
+RemoveBracesLLVM: false
+RemoveParentheses: Leave
+RemoveSemicolon: true
+SeparateDefinitionBlocks: Leave
+SortIncludes: CaseSensitive
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+SpaceAroundPointerQualifiers: Default
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeParens: ControlStatements
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: 1
+SpacesInParens: Never
+SpacesInSquareBrackets: false
+StatementAttributeLikeMacros: []
+StatementMacros: []
+TypenameMacros: []
+UseTab: Never
+WhitespaceSensitiveMacros: []
