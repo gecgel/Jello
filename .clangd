@@ -1,0 +1,16 @@
+# cspell: disable
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  Includes:
+    AnalyzeAngledIncludes: true
+    IgnoreHeader: "Windows.h"
+CompileFlags:
+  CompilationDatabase: build/debug
+Completion:
+  HeaderInsertion: Never
+---
+If:
+  PathMatch: ".+\\.h(pp)?$"
+CompileFlags:
+  Add: ["-Wno-unused-macros", "-Wno-unused-template"]
